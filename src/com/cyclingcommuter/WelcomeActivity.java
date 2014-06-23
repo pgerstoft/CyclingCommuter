@@ -11,12 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class DisplayTimePickerActivity extends ActionBarActivity {
+public class WelcomeActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_display_time_picker);
+		setContentView(R.layout.activity_welcome);
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
@@ -28,7 +28,7 @@ public class DisplayTimePickerActivity extends ActionBarActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.display_time_picker, menu);
+		getMenuInflater().inflate(R.menu.welcome, menu);
 		return true;
 	}
 
@@ -55,8 +55,8 @@ public class DisplayTimePickerActivity extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(
-					R.layout.fragment_display_time_picker, container, false);
+			View rootView = inflater.inflate(R.layout.fragment_welcome,
+					container, false);
 			return rootView;
 		}
 	}

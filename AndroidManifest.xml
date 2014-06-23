@@ -23,8 +23,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cyclingcommuter.DisplayTimePickerActivity"
-            android:label="@string/title_activity_display_time_picker" >
+            android:name="com.cyclingcommuter.UserSettingActivity"
+            android:label="@string/set_setting" >
+        </activity>
+        <activity
+            android:name="com.cyclingcommuter.WelcomeActivity"
+            android:label="@string/title_activity_welcome" >
         </activity>
     </application>
 

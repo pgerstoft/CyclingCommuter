@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/set_setting" >
+        <EditTextPreference
+            android:inputType="number"
+            android:key="zipcode"
+            android:title="@string/edit_zipcode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/set_times" >
+        <com.cyclingcommuter.TimePreference
+            android:key="to_work_time"
+            android:title="@string/to_work_time" />
+        <com.cyclingcommuter.TimePreference
+            android:key="to_home_time"
+            android:title="@string/to_home_time" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
